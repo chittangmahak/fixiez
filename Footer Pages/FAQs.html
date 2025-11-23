@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixiez | FAQs</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --purple: #8223f5;
+      --light-purple: #9f54ff;
+      --bg: #f5f3ff;
+      --text-dark: #1a1a1a;
+      --text-light: #555;
+      --card-bg: #fff;
+      --radius: 16px;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      --gradient: linear-gradient(135deg, #8223f5 0%, #9f54ff 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* HEADER */
+    .header {
+      text-align: center;
+      padding: 70px 20px 40px;
+      background: var(--gradient);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,192C672,181,768,139,864,138.7C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      animation: fadeDown 0.8s ease;
+      margin-bottom: 15px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      animation: fadeDown 1s ease;
+      opacity: 0.9;
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* NAVIGATION */
+    .nav-container {
+      background: white;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--purple);
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: var(--purple);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--purple);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* FAQ CONTAINER */
+    .faq-container {
+      width: 90%;
+      max-width: 850px;
+      margin: 40px auto;
+      padding-bottom: 60px;
+    }
+
+    .faq-item {
+      background: var(--card-bg);
+      margin: 18px 0;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-left: 5px solid transparent;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      border-left: 5px solid var(--purple);
+    }
+
+    .faq-question {
+      padding: 22px 25px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-dark);
+      transition: background 0.3s;
+    }
+
+    .faq-item:hover .faq-question {
+      background: rgba(130, 35, 245, 0.05);
+    }
+
+    .faq-answer {
+      padding: 0 25px 25px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text-light);
+      display: none;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .faq-icon {
+      font-size: 1.2rem;
+      transition: 0.4s;
+      color: var(--purple);
+    }
+
+    .rotate {
+      transform: rotate(180deg);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* SEARCH SECTION */
+    .search-section {
+      max-width: 850px;
+      margin: 0 auto 30px;
+      padding: 0 20px;
+    }
+
+    .search-box {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 15px 20px 15px 50px;
+      border-radius: 50px;
+      border: 2px solid #e0e0e0;
+      font-size: 1rem;
+      transition: all 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--purple);
+      box-shadow: 0 4px 15px rgba(130, 35, 245, 0.15);
+    }
+
+    .search-box i {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+    }
+
+    /* CATEGORIES */
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .category-btn {
+      padding: 10px 20px;
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-radius: 50px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .category-btn:hover, .category-btn.active {
+      background: var(--purple);
+      color: white;
+      border-color: var(--purple);
+    }
+
+    /* CONTACT SECTION */
+    .contact-section {
+      background: white;
+      border-radius: var(--radius);
+      padding: 40px;
+      margin: 60px auto;
+      max-width: 850px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      color: var(--purple);
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      margin-bottom: 25px;
+      color: var(--text-light);
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-btn {
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .contact-btn.whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .contact-btn.email {
+      background: var(--purple);
+      color: white;
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.2rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-5px);
+      color: var(--light-purple);
+    }
+
+    .copyright {
+      margin-top: 30px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2.5rem;
+      }
+      
+      .nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .nav-links {
+        gap: 20px;
+      }
+      
+      .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .contact-btn {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="nav-container">
+    <div class="nav">
+      <div class="logo">
+        <i class="fas fa-tools"></i> Fixiez
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-content">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find answers related to Fixiez services, orders, returns, repairs, and support.</p>
+    </div>
+  </div>
+
+  <!-- SEARCH SECTION -->
+  <div class="search-section">
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search for answers...">
+    </div>
+    
+    <div class="categories">
+      <div class="category-btn active">All Questions</div>
+      <div class="category-btn">Orders & Shipping</div>
+      <div class="category-btn">Returns & Refunds</div>
+      <div class="category-btn">Repair Services</div>
+      <div class="category-btn">Account & Payments</div>
+    </div>
+  </div>
+
+  <!-- FAQ SECTION -->
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What is Fixiez?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        Fixiez is India's trusted platform for buying premium mobile spare parts, accessories, and providing mobile repairs. We offer genuine parts for all major brands with a 6-month warranty on all products. Our repair services are handled by certified technicians with years of experience.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you provide returns or replacements?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        Yes, Fixiez offers returns and replacements based on our Return Policy. You can return products within 7 days of delivery if they are defective, damaged, or incorrect. Make sure to record an unboxing video for proof. Replacement requests are processed within 24 hours of receiving the returned item.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How long does shipping take?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        Orders are usually delivered in <strong>2–5 business days</strong>, depending on your location. For remote areas, delivery may take up to 7 business days. We provide real-time tracking for all orders so you can monitor your shipment's progress.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you offer COD?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        Yes, Cash on Delivery is available for selected products and locations. The maximum COD order value is ₹5,000. For orders above this amount, prepayment is required. Please note that COD orders may take 1-2 extra days for processing.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What if I receive a damaged product?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        You must provide a clear <strong>unboxing video</strong> showing the damage. After verification, we provide replacement or refund as per policy. Please report damaged products within 24 hours of delivery. Our support team will guide you through the replacement process.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How can I contact Fixiez support?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        You can contact us via email at support@fixiez.com, WhatsApp support (+91-9876543210), or the Contact page available on our website. Our support team is available Monday to Saturday, 9 AM to 7 PM. For urgent repair queries, we offer 24/7 chat support.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Are your spare parts genuine?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        Yes, all our spare parts are 100% genuine and sourced directly from manufacturers or authorized distributors. Each part comes with a 6-month warranty and quality certification. We never compromise on quality and ensure compatibility with your device.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you provide repair services at home?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        Yes, we offer doorstep repair services in 15+ major cities across India. Our certified technicians will visit your location at a scheduled time. For other locations, you can ship your device to our service center with free pickup and drop-off service.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What payment methods do you accept?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        We accept all major payment methods including credit/debit cards, net banking, UPI, and popular digital wallets. All transactions are secured with 128-bit SSL encryption to ensure your financial data remains safe.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How do I track my order?</span>
+        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+      </div>
+      <div class="faq-answer">
+        Once your order is shipped, you'll receive a tracking link via SMS and email. You can also track your order by logging into your Fixiez account and visiting the 'My Orders' section. Our tracking system provides real-time updates on your shipment's location.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="contact-section">
+    <h2>Still Have Questions?</h2>
+    <p>Our support team is here to help you with any queries or concerns.</p>
+    <div class="contact-buttons">
+      <a href="#" class="contact-btn whatsapp">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+      <a href="/contact-us.html" class="contact-btn email">
+        <i class="fas fa-envelope"></i> Send an Email
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-content">
+      <div class="logo">
+        <i class="fas fa-tools"></i> Fixiez
+      </div>
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; 2023 Fixiez. All rights reserved.
+      </div>
+    </div>
+  </div>
+
+  <!-- JS FOR FAQ ACCORDION -->
+  <script>
+    const faqs = document.querySelectorAll('.faq-item');
+
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        const answer = faq.querySelector('.faq-answer');
+        const icon = faq.querySelector('.faq-icon');
+
+        // Toggle answer
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+          icon.classList.remove("rotate");
+        } else {
+          answer.style.display = "block";
+          icon.classList.add("rotate");
+        }
+      });
+    });
+
+    // Search functionality
+    const searchInput = document.querySelector('.search-box input');
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+        
+        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+
+    // Category filtering
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // In a real implementation, you would filter FAQs by category
+        // For this example, we'll just show all FAQs
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+          item.style.display = 'block';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -544,6 +544,11 @@
       transform: translateX(0);
     }
 
+    .btnrepair{
+      text-decoration: none;
+      color:white;
+    }
+
     /* ---------- HERO / SLIDER ---------- */
     .hero {
       position: relative;
