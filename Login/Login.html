@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIXIEZ | Authentication</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Login.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container">
+        <!-- Left Side - Branding & Info -->
+        <div class="auth-side">
+            <div class="auth-content">
+                <h1>Welcome to FIXIEZ</h1>
+                <p>Your trusted partner for device repair parts, tools, and services. Join our community of repair professionals and DIY enthusiasts.</p>
+                
+                <ul class="features">
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure & Trusted Platform</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Fast Delivery Across India</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-tools"></i>
+                        <span>Professional Repair Tools & Parts</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Customer Support</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Right Side - Forms -->
+        <div class="auth-forms">
+            <div class="form-container">
+                <div class="logo">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>FIXIEZ</span>
+                </div>
+                
+                <div class="form-toggle toggle-login">
+                    <div class="toggle-slider"></div>
+                    <button class="toggle-btn active" data-form="login">Login</button>
+                    <button class="toggle-btn" data-form="signup">Sign Up</button>
+                </div>
+                
+                <!-- Login Form -->
+                <form class="form active" id="login-form">
+                    <h2 class="form-title">Welcome Back</h2>
+                    <p class="form-subtitle">Sign in to your FIXIEZ account</p>
+                    
+                    <div class="form-group">
+                        <label for="login-email" class="form-label">Email Address</label>
+                        <input type="email" id="login-email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password" class="form-label">Password</label>
+                        <input type="password" id="login-password" class="form-input" placeholder="Enter your password" required>
+                        <button type="button" class="password-toggle" id="login-password-toggle">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="remember-forgot">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="remember-me">
+                            <span class="checkmark"></span>
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign In
+                    </button>
+                    
+                    <div class="divider">
+                        <span>Or continue with</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a>
+                    </div>
+                </form>
+                
+                <!-- Signup Form -->
+                <form class="form" id="signup-form">
+                    <h2 class="form-title">Create Account</h2>
+                    <p class="form-subtitle">Join FIXIEZ today for the best repair experience</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signup-firstname" class="form-label">First Name</label>
+                            <input type="text" id="signup-firstname" class="form-input" placeholder="Enter first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-lastname" class="form-label">Last Name</label>
+                            <input type="text" id="signup-lastname" class="form-input" placeholder="Enter last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-email" class="form-label">Email Address</label>
+                        <input type="email" id="signup-email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="signup-phone" class="form-input" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-address" class="form-label">Official Address</label>
+                        <input type="text" id="signup-address" class="form-input" placeholder="Enter your address" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="signup-city" class="form-label">City</label>
+                            <input type="text" id="signup-city" class="form-input" placeholder="Enter your city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-pincode" class="form-label">Pincode</label>
+                            <input type="text" id="signup-pincode" class="form-input" placeholder="Enter pincode" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-imei" class="form-label">IMEI Number <span class="optional">(Optional)</span></label>
+                        <input type="text" id="signup-imei" class="form-input" placeholder="Enter device IMEI (optional)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-password" class="form-label">Password</label>
+                        <input type="password" id="signup-password" class="form-input" placeholder="Create a password" required>
+                        <button type="button" class="password-toggle" id="signup-password-toggle">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="signup-confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" id="signup-confirm-password" class="form-input" placeholder="Confirm your password" required>
+                        <button type="button" class="password-toggle" id="signup-confirm-password-toggle">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="agree-terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#" style="color: var(--primary);">Privacy Policy</a>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class="fas fa-user-plus"></i>
+                        Create Account
+                    </button>
+                    
+                    <div class="divider">
+                        <span>Or continue with</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        Already have an account? <a href="#" id="switch-to-login">Sign In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Login.js"></script>
+</body>
+</html>

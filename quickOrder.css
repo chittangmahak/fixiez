@@ -1,0 +1,139 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    background:#fafafa;
+    color:#333;
+    padding:40px 0;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+h1{
+    text-align:center;
+    color:#6a1ed4;
+    font-size:36px;
+    margin-bottom:40px;
+    letter-spacing:1px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.table-header{
+    display:grid;
+    grid-template-columns: 2fr 0.7fr 0.7fr 0.7fr;
+    margin-bottom:10px;
+    font-weight:600;
+    color:#6a1ed4;
+    letter-spacing:1px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns: 2fr 0.7fr 0.7fr 0.7fr;
+    gap:10px;
+    margin-bottom:15px;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.row:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+input[type="text"]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+input[type="text"]:hover{
+    border-color:#6a1ed4;
+}
+
+.qty-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+}
+
+.qty-btn{
+    width:32px;
+    height:32px;
+    border:none;
+    background:#eee;
+    border-radius:5px;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.qty-btn:hover{
+    background:#6a1ed4;
+    color:white;
+}
+
+.remove{
+    color:#6a1ed4;
+    font-weight:600;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+}
+
+.remove:hover{
+    text-decoration:underline;
+}
+
+.buttons{
+    margin-top:20px;
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:12px 22px;
+    background:white;
+    border:2px solid #6a1ed4;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:600;
+    color:#6a1ed4;
+}
+
+.btn:hover{
+    background:#6a1ed4;
+    color:white;
+}
+
+.checkout-btn{
+    float:right;
+    margin-top:25px;
+    padding:14px 30px;
+    background:#6a1ed4;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.checkout-btn:hover{
+    background:#6a1ed4;
+}

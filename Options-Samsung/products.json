@@ -1,0 +1,28 @@
+{
+  "GS25-DISP-101": {
+    "title": "Galaxy S25 AMOLED Display Assembly",
+    "price": 169.00,
+    "sku": "GS25-DISP-101",
+    "image": "/images/s25-flat-1.jpeg",
+    "description": "Premium Samsung S25 AMOLED display with full frame.",
+    "features": [
+      "Dynamic AMOLED 2X",
+      "HDR10+ Support",
+      "Factory-calibrated colors",
+      "Premium Quality"
+    ]
+  },
+
+  "GS25-BATT-209": {
+    "title": "Galaxy S25 Battery Replacement 4900mAh",
+    "price": 49.80,
+    "sku": "GS25-BATT-209",
+    "image": "/images/s25-flat-2.jpeg",
+    "description": "High-capacity OEM battery replacement for Galaxy S25.",
+    "features": [
+      "4900mAh capacity",
+      "A-grade lithium cells",
+      "Safe & durable"
+    ]
+  }
+}

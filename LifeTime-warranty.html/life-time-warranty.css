@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f7f7f7;
+}
+
+/* HERO */
+.warranty-hero {
+    background: linear-gradient(135deg, #8223f5, #4b69ff);
+    height:250px;
+    padding: 70px 20px;
+    color: white;
+    text-align: center;
+}
+
+.warranty-hero h1 {
+    font-size: 45px;
+    margin: 50px;
+}
+
+.warranty-hero p {
+    margin-top: -25px;
+    font-size: 18px;
+}
+
+/* FEATURES */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-grid {
+    margin-top: 40px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: #8223f5;
+    margin-bottom: 15px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* COVERED / NOT COVERED */
+.covered-section {
+    padding: 50px 20px;
+    background: #ffffff;
+}
+
+.covered-section h2 {
+    text-align: center;
+}
+
+.covered-list {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* STEPS */
+.steps {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.step-grid {
+    margin-top: 40px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.step-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+
+.step-card i {
+    font-size: 42px;
+    color: #8223f5;
+    margin-bottom: 15px;
+}
+
+.step-card:hover {
+    transform: translateY(-6px);
+}
+
+/* CLAIM FORM */
+.claim-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.claim-box {
+    max-width: 750px;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.claim-box input,
+.claim-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.claim-btn {
+    background: #8223f5;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.claim-btn:hover {
+    background: #5a12c1;
+}
+
+/* FAQ */
+.faq {
+    padding: 60px 20px;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faq-item {
+    background: #fff;
+    padding: 18px 20px;
+    margin: 12px auto;
+    max-width: 750px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faq-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item p {
+    display: none;
+    margin-top: 10px;
+    line-height: 1.7;
+}

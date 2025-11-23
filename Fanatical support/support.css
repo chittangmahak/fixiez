@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #8223f5, #527aff);
+    height:250px;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+/* FEATURES */
+.features {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    width: 260px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CHANNELS */
+.channels {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.channel-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.channel-box {
+    background: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.highlight {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8223f5;
+}
+
+/* PROMISE */
+.promise {
+    padding: 40px;
+    background: #ffffff;
+}
+
+.promise ul {
+    line-height: 1.9;
+    font-size: 18px;
+}
+
+/* FAQ */
+.faq {
+    padding: 40px;
+    background: #f0f0ff;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+    margin-top: 5px;
+    background: white;
+    border-left: 3px solid #8223f5;
+    border-radius: 8px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #8223f5;
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #5c15b7;
+}

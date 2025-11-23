@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Details</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+<div class="product-container">
+
+  <div class="left">
+    <img id="productImage" class="product-image">
+  </div>
+
+  <div class="right">
+    <h1 id="productTitle"></h1>
+    <p class="sku">SKU: <span id="productSKU"></span></p>
+    <p class="price">$<span id="productPrice"></span></p>
+    <p id="productDescription"></p>
+
+    <h3>Features</h3>
+    <ul id="productFeatures"></ul>
+
+    <div class="qty-row">
+      <button id="dec">-</button>
+      <input id="qty" type="number" value="1" min="1">
+      <button id="inc">+</button>
+    </div>
+
+    <button class="btn primary">Add to Cart</button>
+  </div>
+
+</div>
+
+<script src="product.js"></script>
+</body>
+</html>

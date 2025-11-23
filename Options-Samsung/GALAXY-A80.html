@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products Grid - FIXIEZ | Galaxy A80</title>
+  <link rel="stylesheet" href="Galaxy.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">
+        <div class="sort">
+          <label>Sort By</label>
+          <select id="sortSelect">
+            <option value="position">Position</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="show">
+          <label>Show</label>
+          <select id="showSelect">
+            <option value="12">12</option>
+            <option value="24" selected>24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+
+        <div class="cart">
+          <button id="cartBtn" class="cart-btn">Cart <span id="cartCount">0</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-grid" id="productsGrid">
+
+      <!-- Product 1 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/b1.png" alt="S25 Ultra Display" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Samsung Galaxy A80 (A805 / 2019) Charging Port (Soldering Required)</h3>
+          <p class="sku">SKU: 9-SA-6116</p>
+          <p class="price">₹3,900</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/b2.png" alt="Battery" />
+        </div>
+        <div class="card-body">
+          <div class="color-pill teal">TEAL</div>
+          <h3 class="product-title">Samsung Galaxy A80 (A805 / 2019) Power Button Flex Cable</h3>
+          <p class="sku">SKU: 9-SA-6117</p>
+          <p class="price">₹1,560</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/b3.png" alt="Charging Port" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Samsung Galaxy A80 (A805 / 2019) Rear Camera</h3>
+          <p class="sku">SKU: 9-SA-5810</p>
+          <p class="price">₹1,799</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+    <a href="product.html?id=GS25-DISP-101" class="card-link">
+      <article class="card" >
+        <div class="image-wrap">
+          <img src="/images/b4.png" alt="Charging Port" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Samsung Galaxy A80 (A805 / 2019) Sim Card Tray (Angel Gold)</h3>
+          <p class="sku">SKU: 9-SA-5915</p>
+          <p class="price">₹199</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+    </a>  
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© FIXIEZ — Galaxy S25 Ultra Parts & Tools</p>
+    </div>
+  </footer>
+
+  <script src="Galaxy.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | FIXIEZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="#" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>FIXIEZ</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>My Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Help & Support</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h1>My Profile Dashboard</h1>
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="User Avatar">
+                    </div>
+                    <div class="user-details">
+                        <h3>Raj Sharma</h3>
+                        <p>Premium Member</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats Cards -->
+            <div class="dashboard-grid">
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <h3 class="card-title">Total Orders</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">24</div>
+                    <p class="stat-label">+5 from last month</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <h3 class="card-title">Active Repairs</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">3</div>
+                    <p class="stat-label">2 devices in progress</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <h3 class="card-title">Loyalty Points</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">1,250</div>
+                    <p class="stat-label">Earn 250 more for next reward</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <h3 class="card-title">Wallet Balance</h3>
+                        <div class="card-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                    </div>
+                    <div class="stat-number">₹2,450</div>
+                    <p class="stat-label">+₹500 from last month</p>
+                </div>
+            </div>
+            
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-card fade-in">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profile Avatar">
+                            <div class="profile-avatar-edit">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Raj Sharma</h2>
+                            <p>raj.sharma@example.com</p>
+                            <span class="member-badge">Premium Member</span>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Phone Number</div>
+                            <div class="detail-value">+91 98765 43210</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Member Since</div>
+                            <div class="detail-value">March 2022</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Address</div>
+                            <div class="detail-value">123 Tech Park, Andheri East, Mumbai</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Pincode</div>
+                            <div class="detail-value">400069</div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-actions">
+                        <button class="btn">
+                            <i class="fas fa-edit"></i>
+                            Edit Profile
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-share-alt"></i>
+                            Share Profile
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="profile-card fade-in">
+                    <h3 class="section-title">Account Security</h3>
+                    
+                    <div class="security-item">
+                        <div class="detail-item">
+                            <div class="detail-label">Password</div>
+                            <div class="detail-value">••••••••</div>
+                        </div>
+                        <button class="btn" style="margin-top: 10px;">
+                            <i class="fas fa-key"></i>
+                            Change Password
+                        </button>
+                    </div>
+                    
+                    <div class="detail-item" style="margin-top: 25px;">
+                        <div class="detail-label">Two-Factor Authentication</div>
+                        <div class="detail-value">Not Enabled</div>
+                    </div>
+                    <button class="btn btn-outline" style="margin-top: 10px;">
+                        <i class="fas fa-shield-alt"></i>
+                        Enable 2FA
+                    </button>
+                    
+                    <div class="detail-item" style="margin-top: 25px;">
+                        <div class="detail-label">Linked Accounts</div>
+                        <div class="detail-value">Google, Facebook</div>
+                    </div>
+                    <button class="btn btn-outline" style="margin-top: 10px;">
+                        <i class="fas fa-link"></i>
+                        Manage Accounts
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Recent Activity -->
+            <div class="activity-section">
+                <h3 class="section-title">Recent Activity</h3>
+                
+                <ul class="activity-list">
+                    <li class="activity-item fade-in">
+                        <div class="activity-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Order #FZ-2456 Delivered</div>
+                            <div class="activity-desc">Your order containing iPhone 14 Pro Screen has been delivered</div>
+                            <div class="activity-time">2 hours ago</div>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item fade-in">
+                        <div class="activity-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Repair Status Updated</div>
+                            <div class="activity-desc">Your Samsung S23 Ultra repair is now in testing phase</div>
+                            <div class="activity-time">1 day ago</div>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item fade-in">
+                        <div class="activity-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Loyalty Points Added</div>
+                            <div class="activity-desc">You earned 50 loyalty points for your recent purchase</div>
+                            <div class="activity-time">2 days ago</div>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item fade-in">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Profile Updated</div>
+                            <div class="activity-desc">You updated your contact information</div>
+                            <div class="activity-time">3 days ago</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- My Devices -->
+            <div class="devices-section">
+                <h3 class="section-title">My Devices</h3>
+                
+                <div class="devices-grid">
+                    <div class="device-card fade-in">
+                        <div class="device-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="device-name">iPhone 14 Pro</div>
+                        <div class="device-model">A2890 • 256GB</div>
+                        <div class="device-status status-active">Active</div>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                    
+                    <div class="device-card fade-in">
+                        <div class="device-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="device-name">Samsung S23 Ultra</div>
+                        <div class="device-model">SM-S918B • 512GB</div>
+                        <div class="device-status status-pending">In Repair</div>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-tools"></i>
+                            Track Repair
+                        </button>
+                    </div>
+                    
+                    <div class="device-card fade-in">
+                        <div class="device-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="device-name">iPad Air 5</div>
+                        <div class="device-model">A2589 • 64GB</div>
+                        <div class="device-status status-active">Active</div>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="Profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products Grid - FIXIEZ | Galaxy S23 Ultra 5g</title>
+  <link rel="stylesheet" href="Galaxy.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">
+        <div class="sort">
+          <label>Sort By</label>
+          <select id="sortSelect">
+            <option value="position">Position</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="show">
+          <label>Show</label>
+          <select id="showSelect">
+            <option value="12">12</option>
+            <option value="24" selected>24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+
+        <div class="cart">
+          <button id="cartBtn" class="cart-btn">Cart <span id="cartCount">0</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-grid" id="productsGrid">
+
+      <!-- Product 1 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/s23-1.jpeg" alt="S24 Ultra Display" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Samsung Galaxy S8+/S9/S9+/S10E/S10+ 5G/S20 Ultra/S22/S22 Ultra/Note 9/Note 10+ 5G/Note 20 5G/S23 Plus/S23 Ultra Camera Power IC (MPB02)</h3>
+          <p class="sku">SKU: 9-SAB-5471</p>
+          <p class="price">₹3,459</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/s23-2.jpeg" alt="Battery" />
+        </div>
+        <div class="card-body">
+          <div class="color-pill teal">NEW</div>
+          <h3 class="product-title">Samsung Galaxy S23 Ultra (S918) Pre-Cut LCD Adhesive</h3>
+          <p class="sku">SKU: 5-SA-10342</p>
+          <p class="price">₹7,899</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/s23-3.jpeg" alt="Charging Port" />
+        </div>
+        <div class="card-body">
+          <div class="badge">OEM</div>
+          <h3 class="product-title">iSclack EVO Lock Opening Tool</h3>
+          <p class="sku">SKU: 5-DP-7517</p>
+          <p class="price">₹3,000</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/s23-4.jpeg" alt="Front Camera" />
+        </div>
+        <div class="card-body">
+          <div class="notify-box">
+            <input class="notify-input" placeholder="youremail@example.com" />
+            <button class="btn notify">Notify</button>
+          </div>
+          <h3 class="product-title">Pro Magnetic Project Mat</h3>
+          <p class="sku">SKU: GS24U-FCAM-142</p>
+          <p class="price">₹6,780</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/s23-5.webp" alt="Rear Camera"></div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Samsung Galaxy S23 5G / S23 Plus 5G / S23 Ultra 5G / S24 5G / S24 Plus 5G / S24 Ultra 5G Front Camera</h3>
+          <p class="sku">SKU: 9-SA-10055</p>
+          <p class="price">₹3,450</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/s23-6.jpeg" alt="Fingerprint Sensor"></div>
+        <div class="card-body">
+          <div class="badge">NEW</div>
+          <h3 class="product-title">USB-A to USB-C Braided Cable - 3 ft - Black</h3>
+          <p class="sku">SKU: 8-ACC-4173</p>
+          <p class="price">₹5,900</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/s23-7.jpeg" alt="Ear Speaker"></div>
+        <div class="card-body">
+          <div class="badge">OEM</div>
+          <h3 class="product-title">USB-A to USB-C Cable - 3 ft - Silver</h3>
+          <p class="sku">SKU: 8-ACC-4174</p>
+          <p class="price">₹3,670</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© FIXIEZ — Galaxy S24 Ultra Parts & Tools</p>
+    </div>
+  </footer>
+
+  <script src="Galaxy.js"></script>
+</body>
+</html>

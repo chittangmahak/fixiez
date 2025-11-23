@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products Grid - FIXIEZ | Google Pixel 4</title>
+  <link rel="stylesheet" href="Pixel.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">
+        <div class="sort">
+          <label>Sort By</label>
+          <select id="sortSelect">
+            <option value="position">Position</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="show">
+          <label>Show</label>
+          <select id="showSelect">
+            <option value="12">12</option>
+            <option value="24" selected>24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+
+        <div class="cart">
+          <button id="cartBtn" class="cart-btn">Cart <span id="cartCount">0</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-grid" id="productsGrid">
+
+      <!-- Product 1 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/g1.png" alt="S25 Ultra Display" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Google PIxel 4 USB-C Charging Dock Port Flex Cable Replacement (US Version)</h3>
+          <p class="sku">SKU: 9-GO-6429</p>
+          <p class="price">₹6,700</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/g2.png" alt="Battery" />
+        </div>
+        <div class="card-body">
+          <div class="color-pill teal">TEAL</div>
+          <h3 class="product-title">Google PIxel 4 USB-C Charging Dock Port Flex Cable Replacement (international)</h3>
+          <p class="sku">SKU: 9-GO-5569</p>
+          <p class="price">₹7,999</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/g3.png" alt="Charging Port" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Google PIxel 4 Rear-Facing Camera Replacement</h3>
+          <p class="sku">SKU: 9-GO-5564</p>
+          <p class="price">₹9,876</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/g4.png" alt="Front Camera" />
+        </div>
+        <div class="card-body">
+          <div class="notify-box">
+            <input class="notify-input" placeholder="youremail@example.com" />
+            <button class="btn notify">Notify</button>
+          </div>
+          <h3 class="product-title">Google PIxel 4 Ear Speaker Replacement</h3>
+          <p class="sku">SKU: 9-GO-5565</p>
+          <p class="price">₹2,900</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/g5.png" alt="Rear Camera"></div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Google PIxel 4 Loud Speaker Replacement</h3>
+          <p class="sku">SKU: 9-GO-5566</p>
+          <p class="price">₹8,700</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/g6.png" alt="Ear Speaker"></div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Google PIxel 4 Vibration Motor Replacement</h3>
+          <p class="sku">SKU: 9-GO-5568</p>
+          <p class="price">₹3,899</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© FIXIEZ — Galaxy S25 Ultra Parts & Tools</p>
+    </div>
+  </footer>
+
+  <script src="pixel.js"></script>
+</body>
+</html>

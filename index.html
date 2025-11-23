@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FIXIEZ | Mobile Repair Experts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=News+Cycle&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LAYER 1: Stored card error -->
+  <div class="layer layer-1">
+    <div class="container">
+      <span>Phone dead? Back in your hands in 10 hours.</span>
+    </div>
+  </div>
+
+  <!-- LAYER 2: Shipping times + quick links -->
+  <div class="layer layer-2">
+    <div class="container layer-2-inner">
+      <div class="left shipping-times">
+        <span class="ship-item">FedEx cutoff: <strong id="fedexTimer">--:--:--</strong></span>
+        <span class="ship-item">UPS cutoff: <strong id="upsTimer">--:--:--</strong></span>
+      </div>
+
+      <div class="right quick-links">
+        <a href="quickOrder.html">Quick Order</a>
+        <a href="check-order-status.html">Check Order Status</a>
+        <a href="/Login/Login.html">Sign In</a>
+        <a href="/Profile Dashboard/Profile.html">My Account</a>
+        <a href="#">Wholesale</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAYER 3: Logo + Search + Actions -->
+  <div class="layer layer-3">
+    <div class="container layer-3-inner">
+      <div class="left header-left">
+        <div class="logo">FIXIEZ</div>
+        <div class="search-wrap">
+          <div class="searchbox">
+            <input id="mainSearch" type="text" placeholder="Search for parts, tools, and more..." />
+            <button id="searchBtn" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right header-right">
+        <button class="btn buyback">LCD BUYBACK</button>
+        <span class="vl"></span>
+        <a class="link-contact" href="contact-us.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAYER 4: Category menu -->
+  <nav class="layer layer-4">
+    <div class="container layer-4-inner">
+      <ul class="categories">
+
+        <!-- APPLE -->
+        <li class="dropdown">
+          <a href="#">APPLE</a>
+          <ul class="dropdown-menu">
+            <li><a href="Options-Apple/iphone17promax.html">iPhone 17 Pro Max</a></li>
+            <li><a href="Options-Apple/iphone17pro.html">iPhone 17 Pro</a></li>
+            <li><a href="Options-Apple/iphone17.html">iPhone 17</a></li>
+            <li><a href="Options-Apple/iphoneAir.html">iPhone Air</a></li>
+            <li><a href="Options-Apple/iphone16promax.html">iPhone 16 Pro Max</a></li>
+            <li><a href="Options-Apple/iphone16pro.html">iPhone 16 Pro </a></li>
+            <li><a href="Options-Apple/iphone16plus.html">iPhone 16 Plus</a></li>
+            <li><a href="Options-Apple/iphone15promax.html">iPhone 15 Pro Max</a></li>
+            <li><a href="Options-Apple/iphone15pro.html">iPhone 15 Pro</a></li>
+            <li><a href="Options-Apple/iphone15.html">iPhone 15</a></li>
+          </ul>
+        </li>
+
+        <!-- SAMSUNG -->
+        <li class="dropdown">
+          <a href="#">SAMSUNG</a>
+          <ul class="dropdown-menu">
+            <li class="has-submenu">
+              <a href="#">GALAXY S Series</a>
+              <ul class="submenu">
+                <li><a href="Options-Samsung/GALAXY-S25-Ultra.html">Galaxy S25 Ultra</a></li>
+                <li><a href="Options-Samsung/GALAXY-S25.html">Galaxy S25</a></li>
+                <li><a href="Options-Samsung/GALAXY-S24-Ultra.html">Galaxy S24 Ultra</a></li>
+                <li><a href="Options-Samsung/GALAXY-S24.html">Galaxy S24 </a></li>
+                <li><a href="Options-Samsung/GALAXY-S23-Ultra-5g.html">Galaxy S23 Ultra 5G</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">GALAXY A Series</a>
+              <ul class="submenu">
+                <li><a href="Options-Samsung/GALAXY-A90.html">A90 5G(A908/2019)</a></li>
+                <li><a href="Options-Samsung/GALAXY-A9-Pro.html">A9 Pro(A910/2016)</a></li>
+                <li><a href="Options-Samsung/GALAXY-A80.html">A80 A805</a></li>
+                <li><a href="Options-Samsung/GALAXY-A8.html">A8 A530</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">GALAXY J Series</a>
+              <ul class="submenu">
+                <li><a href="Options-Samsung/GALAXY-J8-PLUS.html">Galaxy J8 Plus</a></li>
+                <li><a href="Options-Samsung/GALAXY-J7-Refine.html">Galaxy J7 Refine</a></li>
+                <li><a href="Options-Samsung/GALAXY-J7-PRO.html">Galaxy J7 Pro</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- GOOGLE -->
+        <li class="dropdown">
+          <a href="#">GOOGLE</a>
+          <ul class="dropdown-menu">
+            <li><a href="Options-Google/Pixel-4.html">Pixel 4</a></li>
+            <li><a href="Options-Google/Pixel-5.html">Pixel 5</a></li>
+            <li><a href="Options-Google/Pixel-6.html">Pixel 6</a></li>
+            <li><a href="Options-Google/Pixel-7.html">Pixel 7</a></li>
+          </ul>
+        </li>
+
+        <!-- OTHER PARTS -->
+        <li class="dropdown">
+          <a href="#">OTHER PARTS</a>
+          <ul class="dropdown-menu">
+            <li><a href="Options-Other-Parts/Speakers.html">Speakers</a></li>
+            <li><a href="Options-Other-Parts/Charging-Ports.html">Charging Ports</a></li>
+            <li><a href="Options-Other-Parts/Vibration-motors.html">Vibration Motors</a></li>
+            <li><a href="Options-Other-Parts/Flex-Cables.html">Flex Cables</a></li>
+          </ul>
+        </li>
+
+        <!-- TOOLS -->
+        <li class="dropdown">
+          <a href="#">TOOLS</a>
+          <ul class="dropdown-menu">
+            <li><a href="Options-Tools/Screwdrivers.html">Screwdrivers</a></li>
+            <li><a href="Options-Tools/Openers.html">Openers</a></li>
+            <li><a href="Options-Tools/Glue-Adhesives.html">Glue & Adhesives</a></li>
+          </ul>
+        </li>
+
+        <!-- BOARD -->
+        <li class="dropdown">
+          <a href="#">BOARD</a>
+          <ul class="dropdown-menu">
+            <li><a href="Options-Board/Logic-Board.html">Logic Board</a></li>
+            <li><a href="Options-Board/IC-Chips.html">IC Chips</a></li>
+            <li><a href="Options-Board/Power-IC.html">Power IC</a></li>
+            <li><a href="Options-Board/Charging-IC.html">Charging IC</a></li>
+          </ul>
+        </li>
+
+        <!-- SALE -->
+        <li class="dropdown">
+          <a href="Sales/sales.html">SALE</a>
+        </li>
+        <li class="aboutUs"><a href="About Us/aboutUs.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO: Auto slider -->
+  <header class="hero">
+    <h1 class="hero-title">FIXIEZ</h1>
+    <div class="slider" id="heroSlider">
+      <div class="slide active" data-index="0">
+        <img src="/images/bg-img.jpg" alt="Hero 1" />
+      </div>
+
+      <div class="slide" data-index="1">
+        <img src="images/image2.jpg" alt="Hero 2" />
+      </div>
+
+      <div class="slide" data-index="2">
+        <img src="images/image3.jpg" alt="Hero 3" />
+      </div>
+
+      <div class="slide" data-index="3">
+        <img src="/images/image4.jpg" alt="Hero 4" />
+      </div>
+
+      <div class="slide" data-index="4">
+        <img src="/images/image5.jpg" alt="Hero 5" />
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <div id="heroDots" class="dots"></div>
+    </div>
+  </header>
+
+  <!-- INFO STRIP -->
+  <section class="info-strip">
+    <div class="container info-items">
+      <div class="info">
+        <a href="Free shipping/shipping.html">
+          <img src="https://cdn-icons-png.flaticon.com/512/929/929498.png" alt="Shipping" />
+          <strong>FREE SHIPPING</strong> over ₹5000
+        </a>
+      </div>
+      <div class="info">
+        <a href="LifeTime-warranty.html/life-time-warranty.html">
+          <img src="https://cdn-icons-png.flaticon.com/512/929/929498.png" alt="Warranty" />
+          <strong>LIFETIME WARRANTY</strong>
+        </a>
+      </div>
+      <div class="info">
+        <a href="Financing/financing.html">
+          <img src="https://cdn-icons-png.flaticon.com/512/929/929498.png" alt="Financing" />
+          <strong>FINANCING</strong>
+        </a>
+      </div>
+      <div class="info">
+        <a href="Fanatical support/fanatical-support.html">
+          <img src="https://cdn-icons-png.flaticon.com/512/929/929498.png" alt="Support" />
+          <strong>FANATICAL SUPPORT</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO-COLUMN PROMO -->
+  <section class="promo-two">
+    <div class="container two-grid">
+      <div class="promo card">
+        <h2>Stronger, Faster, Better</h2>
+        <p class="muted">Ultra Premium Screens — lower reflectance, true blacks.</p>
+        <a class="learn-more" href="Ultra Premium Screens.html">Learn More</a>
+        <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Stronger" class="promo-img" />
+      </div>
+
+      <div class="promo card">
+        <h2>Fast Repair</h2>
+        <p class="muted">Fast Repairs, Zero Wait.</p>
+        <a class="get-started" href="Online mobile repairing/Mobile-repairing.html">Get Started</a>
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Buyback" class="promo-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- VividFX -->
+  <section class="vividfx">
+    <div class="container vividfx-inner">
+      <div class="v-text">
+        <h2>VividFX Incell Screens</h2>
+        <p>Most affordable display assemblies with damage warranty.</p>
+        <a class="btn" href="VividFXscreens/VividFX Incell Screens.html">View Pricing</a>
+      </div>
+      <div class="v-image">
+        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="VividFX Sale" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Training -->
+  <section class="training">
+    <div class="container training-inner">
+      <h2>Cellular Repair Training</h2>
+      <p>Repair and Advanced Micro-soldering courses available — hands-on.</p>
+      <a class="btn" href="/SeeCourses/see-courses.html">See Courses</a>
+      <div class="training-image">
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Training" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="col">
+        <h4>CUSTOMER SERVICE</h4>
+        <ul>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="About Us/aboutUs.html">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>WHOLESALE</h4>
+        <p>Sign up for wholesale pricing and benefits.</p>
+        <a href="#" class="btn mt-20">Join Now</a>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2024 FIXIEZ. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

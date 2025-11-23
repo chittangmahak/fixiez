@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products Grid - FIXIEZ | Galaxy S25 Ultra</title>
+  <link rel="stylesheet" href="Galaxy.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">
+        <div class="sort">
+          <label>Sort By</label>
+          <select id="sortSelect">
+            <option value="position">Position</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="show">
+          <label>Show</label>
+          <select id="showSelect">
+            <option value="12">12</option>
+            <option value="24" selected>24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+
+        <div class="cart">
+          <button id="cartBtn" class="cart-btn">Cart <span id="cartCount">0</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-grid" id="productsGrid">
+
+      <!-- Product 1 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/imageS1.jpeg" alt="S25 Ultra Display" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Galaxy S25 Ultra AMOLED Display Assembly (Premium)</h3>
+          <p class="sku">SKU: S25U-DISP-001</p>
+          <p class="price">₹1,800</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/imageS2.jpeg" alt="Battery" />
+        </div>
+        <div class="card-body">
+          <div class="color-pill teal">TEAL</div>
+          <h3 class="product-title">Galaxy S25 Ultra Battery Replacement 5500mAh</h3>
+          <p class="sku">SKU: S25U-BATT-002</p>
+          <p class="price">₹5,999</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/imageS3.jpeg" alt="Charging Port" />
+        </div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Galaxy S25 Ultra Charging Port Flex - Titanium Black</h3>
+          <p class="sku">SKU: S25U-CHG-003</p>
+          <p class="price">₹8,900</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="card">
+        <div class="image-wrap">
+          <img src="/images/imageS4.png" alt="Front Camera" />
+        </div>
+        <div class="card-body">
+          <div class="notify-box">
+            <input class="notify-input" placeholder="youremail@example.com" />
+            <button class="btn notify">Notify</button>
+          </div>
+          <h3 class="product-title">Galaxy S25 Ultra Front Camera Module 12MP</h3>
+          <p class="sku">SKU: S25U-FCAM-004</p>
+          <p class="price">₹2,980</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/imageS5.jpg" alt="Rear Camera"></div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Galaxy S25 Ultra Rear Quad Camera Assembly</h3>
+          <p class="sku">SKU: S25U-RCAM-005</p>
+          <p class="price">₹7,800</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/imageS6.jpg" alt="Laser Sensor"></div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Galaxy S25 Ultra Laser Autofocus Sensor</h3>
+          <p class="sku">SKU: S25U-LASER-006</p>
+          <p class="price">₹4,500</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/imageS7.jpg" alt="Ear Speaker"></div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Galaxy S25 Ultra Ear Speaker Replacement</h3>
+          <p class="sku">SKU: S25U-EAR-007</p>
+          <p class="price">₹1,930</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Product 8 -->
+      <article class="card">
+        <div class="image-wrap"><img src="/images/imageS8.jpg" alt="Loudspeaker"></div>
+        <div class="card-body">
+          <div class="badge">PREMIUM</div>
+          <h3 class="product-title">Galaxy S25 Ultra Loud Speaker Assembly</h3>
+          <p class="sku">SKU: S25U-SPK-008</p>
+          <p class="price">₹4,566</p>
+
+          <div class="qty-row">
+            <button class="qty-btn" data-action="decrease">-</button>
+            <input class="qty" type="number" value="1" min="1" />
+            <button class="qty-btn" data-action="increase">+</button>
+          </div>
+
+          <button class="btn primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© FIXIEZ — Galaxy S25 Ultra Parts & Tools</p>
+    </div>
+  </footer>
+
+  <script src="Galaxy.js"></script>
+</body>
+</html>
